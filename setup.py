@@ -5,7 +5,7 @@ with open('README.md', encoding='us-ascii') as f:
 
 setup_info = dict(
     name='pytorch_model_summary',
-    version='0.1.1',
+    version='0.1.2',
     author='Alison Marczewski',
     author_email='alison.marczewski@gmail.com',
     url='https://github.com/amarczew/pytorch_model_summary',

@@ -63,6 +63,10 @@ def summary(model, *inputs, batch_size=-1, show_input=False, show_hierarchical=F
             return _lst
 
         def hook(module, input, output=None):
+            if id(module) in module_mapped:
+                return
+            
+            module_mapped.add(id(module))
             module_name = module_summary.get(id(module)).get('module_name')
             module_idx = len(summary)
 
@@ -99,6 +103,7 @@ def summary(model, *inputs, batch_size=-1, show_input=False, show_hierarchical=F
     # create properties
     summary = OrderedDict()
     module_summary = dict()
+    module_mapped = set()
     hooks = []
 
     # register id of parent modules
