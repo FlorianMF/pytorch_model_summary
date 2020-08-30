@@ -149,7 +149,7 @@ You can use this library like this. If you want to see more detail, Please see e
 
 ## Examples using different set of parameters
 
-Run example using Transformer Model in [Attention is all you need paper(2017)](https://arxiv.org/abs/1706.03762)
+Outputs from [Transformer Model Example](https://github.com/amarczew/pytorch_model_summary/blob/master/examples/Transformer.py) based on [Attention is all you need paper (2017)](https://arxiv.org/abs/1706.03762)
 
 1) showing **input shape**
 ```python
